@@ -12,6 +12,7 @@ Basic Types
 
 The following basic types are used as terminals in the rest of the grammar. Each type must be serialized in little-endian format.
 
+| Type | Description |
 | --- | --- |
 | byte | 1 byte (8-bits) |
 | int16 | 2 bytes (16-bit signed integer, two's complement) |
@@ -67,100 +68,35 @@ Run meta data
 | Comments short | String | 256 |
 | Comments long | String | 2048 |
 | Environment UUID | String | 36 |
+
 Channel config
 --------------
-
-|
-
-Param
-
- |
-
-Type
-
- |
-
-Size
-
- |
-
-Value / options
-
- |
-
+| Param | Type | Size | Value / options |
 | --- | --- | --- | --- |
-
 | Channel definition start | Uint16 | 2 | 20111 |
-
-| Channel ID | Uint16 | 2 |
-
- |
-
+| Channel ID | Uint16 | 2 | |
 | Sample rate | Uint16 | 2 | 1, 10, 100, 250, 500 |
-
-| Sample count | Uint32 | 4 |
-
- |
-
-| Sample start | Uint32 | 4 |
-
- |
-
-| Value type | Uint16 | 2 |
-
- |
-
-| Value size | Uint16 | 2 |
-
- |
-
-| Decimals | Uint16 | 2 |
-
- |
-
-| Offset | Uint16 | 2 |
-
- |
-
-| Gain | Uint16 | 2 |
-
- |
-
-| Channel name | String | 64 |
-
- |
-
-| Channel unit | String | 8 |
-
- |
-
-| Reserved | String | 256 |
-
- |
-
+| Sample count | Uint32 | 4 | |
+| Sample start | Uint32 | 4 | |
+| Value type | Uint16 | 2 | |
+| Value size | Uint16 | 2 | |
+| Decimals | Uint16 | 2 | |
+| Offset | Uint16 | 2 | |
+| Gain | Uint16 | 2 | |
+| Channel name | String | 64 | |
+| Channel unit | String | 8 | |
+| Reserved | String | 256 | |
 | Channel definition end | Uint16 | 2 | 20222 |
 
 Data
-
 ----
-
 Measured samples as continuous stream.
 
 Special channels
-
 ----------------
-
 Laptriggers needs to be handled with a custom channel. This channel shall be recorded in 10Hz
 
-|
-Data
- |
-Location
- |
-Length
- |
-Value
- |
+| Data | Location | Length | Value  |
 | --- | --- | --- | --- |
 | Magic number | 0 | 1 | -120 |
 | Laptrig type | 1 | 1 | -10 for lap, -15 for split |
