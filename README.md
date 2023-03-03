@@ -1,5 +1,4 @@
 Introduction
-
 ============
 
 This document describes a binary file format for TestLogger Analyzer.
@@ -7,7 +6,6 @@ This document describes a binary file format for TestLogger Analyzer.
 File format is open source and free for everyone to utilise as they wish
 
 Basic Types
-
 ===========
 
 The following basic types are used as terminals in the rest of the grammar. Each type must be serialized in little-endian format.
