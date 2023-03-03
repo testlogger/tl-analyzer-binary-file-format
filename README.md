@@ -1,9 +1,7 @@
 Introduction
 ============
 
-This document describes a binary file format for TestLogger Analyzer.
-
-File format is open source and free for everyone to utilise as they wish
+This document describes a binary file format for TestLogger Analyzer. File format is open source and free for everyone to utilise as they wish
 
 Basic Types
 ===========
