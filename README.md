@@ -63,7 +63,7 @@ Run meta data
 | Setup UUID | String | 36 |
 | Comments short | String | 256 |
 | Comments long | String | 2048 |
-| Environment UUID | String | 36 |
+| Environment URL | String | 128 |
 
 Channel config
 --------------
