@@ -98,3 +98,9 @@ Laptriggers needs to be handled with a custom channel. This channel shall be rec
 | Laptrig type | 1 | 1 | -10 for lap, -15 for split |
 | Counter | 2 | 2 | uint16 |
 | Time from start in milliseconds | 4 | 4 | Int32 |
+
+Manipulating file content
+=========================
+In certain cases it's required to modify the data content afterwards for example in TL Analyzer. Modification includes for example fixing metadata or lap times.
+
+Idea in the file format is to have separate section for modified data and never manipulating the original data
